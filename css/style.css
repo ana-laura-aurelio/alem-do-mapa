@@ -1,15 +1,70 @@
- <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
- 
-        ul {
-            list-style: none;
-            display: flex;
-            /* background-color: gray; */
-            gap: 20px;
-            justify-content: space-around;
-            font-size: 18px;
-        }
-    </style>
+ *{
+     font-family: "Fonte-padrao";
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ ul {
+     list-style: none;
+     display: flex;
+     /* background-color: gray; */
+     gap: 20px;
+     justify-content: space-around;
+     font-size: 18px;
+     font-family: "Fonte-padrao";
+ }
+
+ #lista-menu li a:hover {
+     color: yellow;
+     font-weight: bold;
+ }
+
+ #div-banner {
+     height: 400px;
+ }
+
+ #img_banner {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ @font-face {
+     font-family: "Fonte-padrao";
+     src: url(../fonts/dum1.ttf);
+ }
+
+ #titulo-lugares{
+     text-align: center;
+     color: rgb(159, 159, 70);
+ }
+ #lugares-viajar{
+     max-width: 1200px;
+    margin: 0 auto;
+ }
+ #lugares-viajar{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ #lugares-viajar div{
+     flex: 1 1 calc(33.3% - 30px);
+ }
+ #lugares-viajar img{
+     width: 300px; 
+ }
+ #lugares{
+    margin-top: 70px;
+ }
+#lugares-viajar img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+#lugares-viajar img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
