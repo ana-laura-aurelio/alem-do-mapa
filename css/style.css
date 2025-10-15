@@ -51,9 +51,7 @@
     flex-wrap: wrap;
     justify-content: center;
  }
- #lugares-viajar div{
-     flex: 1 1 calc(33.3% - 30px);
- }
+ 
  #lugares-viajar img{
      width: 300px; 
  }
@@ -67,4 +65,14 @@
 #lugares-viajar img:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+.cor-laranja{
+    color: orangered;
+}
+.centralizar-texto{
+    text-align: center;
+}
+.justificar-texto{
+    text-align: justify;
+    line-height: 20px;
 }
