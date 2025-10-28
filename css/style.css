@@ -82,6 +82,7 @@
 }
 .lugar-detalhado{
     display: flex;
+    margin-top: 5vh;
 }
 .img-detalhado{
     width: 50%;
@@ -96,4 +97,7 @@
 }
 .separacao{
  margin: 10px;
+}
+.arredondar{
+     border-radius: 20px;
 }
