@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoscroll.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoplay.css" />
+
+
 </head>
 
 <body>
@@ -72,7 +80,7 @@
                 </section>
                 <section id="punta-cana">
                     <div class="lugar-detalhado">
-                        <div class="img-detalhado">
+                        <div class="img-detalhado arredondar">
                             <div class="f-carousel" id="myCarousel">
                                 <div class="f-carousel__slide"><img src="../img/punta-cana.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/punta-cana-2.jpg" alt=""></div>
@@ -108,7 +116,7 @@
                                 mistura cultural, influenciada por holandeses, africanos e latino-americanos, dá à ilha
                                 uma atmosfera única, alegre e acolhedora</p>
                         </div>
-                        <div class="img-detalhado">
+                        <div class="img-detalhado arredondar">
                             <div class="f-carousel" id="myCarouse2">
                                 <div class="f-carousel__slide"><img src="../img/aruba.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/aruba-2.jpg" alt=""></div>
@@ -118,7 +126,7 @@
                         </div>
                     </div>
                     <div class="lugar-detalhado">
-                        <div class="img-detalhado">
+                        <div class="img-detalhado arredondar">
                             <div class="f-carousel" id="myCarouse3">
                                 <div class="f-carousel__slide"><img src="../img/jamaica.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/jamaica-2.jpg" alt=""></div>
@@ -155,8 +163,8 @@
                                 hospitalidade de seu povo. As Bahamas são a escolha perfeita para quem deseja combinar
                                 descanso, aventura e sofisticação em um ambiente caribenho inesquecível.</p>
                         </div>
-                        <div class="img-detalhado">
-                             <div class="f-carousel" id="myCarouse4">
+                        <div class="img-detalhado arredondar">
+                            <div class="f-carousel" id="myCarouse4">
                                 <div class="f-carousel__slide"><img src="../img/bahamas.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/bahamas-2.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/bahamas-3.jpg"></div>
@@ -164,8 +172,8 @@
                         </div>
                     </div>
                     <div class="lugar-detalhado">
-                        <div class="img-detalhado">
-                             <div class="f-carousel" id="myCarouse5">
+                        <div class="img-detalhado arredondar">
+                            <div class="f-carousel" id="myCarouse5">
                                 <div class="f-carousel__slide"><img src="../img/saint-martin.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/saint-martin-2.jpg" alt=""></div>
                                 <div class="f-carousel__slide"><img src="../img/saint-martin-3.jpg"></div>
@@ -188,13 +196,13 @@
                 </section>
         </div>
     </main>
-    <div class="f-carousel" id="myCarousel">
-        <div class="f-carousel__slide">1</div>
-        <div class="f-carousel__slide">2</div>
-        <div class="f-carousel__slide">3</div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoscroll.umd.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.dots.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoplay.umd.js"></script>
     <script>
         const container = document.getElementById("myCarousel");
         const options = {
@@ -203,16 +211,13 @@
 
         Carousel(container, options).init();
 
-       Carousel(document.getElementById("myCarousel"), options).init();
-        
-       Carousel(document.getElementById("myCarouse2"), options).init();
-       
-       Carousel(document.getElementById("myCarouse3"), options).init();
-
-       Carousel(document.getElementById("myCarouse4"), options).init();
-
-       
+        Carousel(document.getElementById("myCarousel"), options, { Arrows, Autoscroll }).init();
+        Carousel(document.getElementById("myCarouse2"), options, { Arrows }).init();
+        Carousel(document.getElementById("myCarouse3"), options, { Arrows }).init();
+        Carousel(document.getElementById("myCarouse4"), options, { Arrows }).init();
+        Carousel(document.getElementById("myCarouse5"), options, { Arrows }).init();
     </script>
+
 </body>
 
 
