@@ -109,13 +109,21 @@
                                 uma atmosfera única, alegre e acolhedora</p>
                         </div>
                         <div class="img-detalhado">
-                            <img class="arredondar" src="../img/aruba.jpg" alt="" class="img-detalhado">
+                            <div class="f-carousel" id="myCarouse2">
+                                <div class="f-carousel__slide"><img src="../img/aruba.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/aruba-2.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/aruba-3.jpg"></div>
+                            </div>
 
                         </div>
                     </div>
                     <div class="lugar-detalhado">
                         <div class="img-detalhado">
-                            <img class="arredondar" src="../img/jamaica.jpg" alt="" class="img-detalhado">
+                            <div class="f-carousel" id="myCarouse3">
+                                <div class="f-carousel__slide"><img src="../img/jamaica.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/jamaica-2.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/jamaica-3.jpg"></div>
+                            </div>
 
                         </div>
                         <div class="texto-detalhado separacao">
@@ -148,12 +156,20 @@
                                 descanso, aventura e sofisticação em um ambiente caribenho inesquecível.</p>
                         </div>
                         <div class="img-detalhado">
-                            <img class="arredondar" src="../img/bahamas.jpg" alt="" class="img-detalhado">
+                             <div class="f-carousel" id="myCarouse4">
+                                <div class="f-carousel__slide"><img src="../img/bahamas.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/bahamas-2.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/bahamas-3.jpg"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="lugar-detalhado">
                         <div class="img-detalhado">
-                            <img class="arredondar" src="../img/saint-martin.jpg" alt="" class="img-detalhado">
+                             <div class="f-carousel" id="myCarouse5">
+                                <div class="f-carousel__slide"><img src="../img/saint-martin.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/saint-martin-2.jpg" alt=""></div>
+                                <div class="f-carousel__slide"><img src="../img/saint-martin-3.jpg"></div>
+                            </div>
                         </div>
                         <div class="texto-detalhado separacao">
                             <h3 class="cor-laranja">Saint Martin</h3>
@@ -186,6 +202,16 @@
         };
 
         Carousel(container, options).init();
+
+       Carousel(document.getElementById("myCarousel"), options).init();
+        
+       Carousel(document.getElementById("myCarouse2"), options).init();
+       
+       Carousel(document.getElementById("myCarouse3"), options).init();
+
+       Carousel(document.getElementById("myCarouse4"), options).init();
+
+       
     </script>
 </body>
 
